@@ -17,6 +17,8 @@ new_array = @@string.split(/[,\s]/)
 new_array.each do |string1|
   string1.gsub(" ","")
   string1.strip!
+  if string1 == ""
+    string1
 end 
 new_array
 end   
