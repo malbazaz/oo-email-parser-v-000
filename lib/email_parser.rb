@@ -13,8 +13,9 @@ end
 
 def parse
 new_array = []  
-new_array = @@string.gsub(" ","").split(/[,\s]/)
+new_array = @@string.split(/[,\s]/)
 new_array.each do |string1|
+  string1.gsub(" ","")
   string1.strip!
 end 
 new_array
