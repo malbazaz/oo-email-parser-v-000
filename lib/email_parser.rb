@@ -13,13 +13,15 @@ end
 
 def parse
 new_array = []  
+last_array = []
 new_array = @@string.split(/[,\s]/)
 new_array.each do |string1|
   string1.gsub(" ","")
   string1.strip!
 end 
 new_array.delete("")
-new_array
+last_array = new_array.uniq 
+last_array
 end   
   
   
